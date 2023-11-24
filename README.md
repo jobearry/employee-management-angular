@@ -1,2 +1,1 @@
-# employee-management-angular
-Employee Management System
+# Employee Management System
