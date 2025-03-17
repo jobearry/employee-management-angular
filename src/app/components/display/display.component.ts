@@ -2,9 +2,10 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
 import { Employee } from 'src/app/models/Employee';
 
 @Component({
-  selector: 'app-display',
-  templateUrl: './display.component.html',
-  styleUrls: ['./display.component.css']
+    selector: 'app-display',
+    templateUrl: './display.component.html',
+    styleUrls: ['./display.component.css'],
+    standalone: false
 })
 export class DisplayComponent implements OnInit{
   @Input() Employees: Employee[] = [];

@@ -2,9 +2,10 @@ import { Component, Output, EventEmitter, Input, OnInit } from '@angular/core';
 import { Employee } from 'src/app/models/Employee';
 
 @Component({
-  selector: 'app-employee-form',
-  templateUrl: './employee-form.component.html',
-  styleUrls: ['./employee-form.component.css']
+    selector: 'app-employee-form',
+    templateUrl: './employee-form.component.html',
+    styleUrls: ['./employee-form.component.css'],
+    standalone: false
 })
 export class EmployeeFormComponent implements OnInit{
   @Output() getInputValClick: EventEmitter<Employee> = new EventEmitter();

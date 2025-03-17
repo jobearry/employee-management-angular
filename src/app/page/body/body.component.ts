@@ -2,9 +2,10 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Employee } from 'src/app/models/Employee';
 
 @Component({
-  selector: 'app-body',
-  templateUrl: './body.component.html',
-  styleUrls: ['./body.component.css']
+    selector: 'app-body',
+    templateUrl: './body.component.html',
+    styleUrls: ['./body.component.css'],
+    standalone: false
 })
 
 export class BodyComponent implements OnInit {
