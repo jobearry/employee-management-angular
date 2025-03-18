@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TableComponent } from "../../components/table/table.component";
-import { employees } from '../../models/employee';
+import { Employee, employees } from '../../models/employee';
 
 @Component({
   selector: 'app-employees',
@@ -9,7 +9,7 @@ import { employees } from '../../models/employee';
   styleUrl: './employees.component.css'
 })
 export class EmployeesComponent {
-  myEmployees = employees
+  myEmployees: Employee[] = [...employees]
   headers = ["ID", "First Name", "Last Name", "Email", "Age"]
   fields = [...Object.keys(this.myEmployees[0])]
 }
