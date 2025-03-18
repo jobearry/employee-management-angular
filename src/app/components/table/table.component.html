@@ -1,0 +1,21 @@
+<table class="w-full text-left table-fixed min-w-max shadow shadow-gray-400 overflow-hidden">
+  <thead>
+    <tr class="border-b border-slate-300 bg-[#593370] text-white">
+      <th *ngFor="let header of headers"
+        class="p-4 text-sm font-normal leading-none ">
+        {{header}}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data" 
+      class="hover:bg-slate-50 text-wrap">
+      <td *ngFor="let field of fields" 
+        class="p-4 border-b border-slate-200 py-5 break-words whitespace-normal">
+        <p class="block font-semibold text-sm text-slate-800 ">
+          {{item[field]}}
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
