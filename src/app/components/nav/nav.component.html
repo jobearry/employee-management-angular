@@ -1,12 +1,12 @@
-<nav class="sticky top-0 flex h-16 justify-between place-items-center bg-[#291a2c] text-[#cfcfcf]">
-  <p class="text-2xl m-3">JobyTech Employees</p>
-  <button class="w-10 h-10 m-3 focus:bg-[#462c4b] text-[#cfcfcf] rounded-md block md:hidden"
+<nav class="sticky top-0 flex h-16 justify-between place-items-center bg-[#2d304e] text-[#cfcfcf]">
+  <a class="text-2xl m-3" [routerLink]="['/home']" routerLinkActive="active">JobyTech Employees</a>
+  <button class="w-10 h-10 m-3 focus:bg-[#2d2c4b] text-[#cfcfcf] focus:border focus:border-[#181929] rounded-md block md:hidden"
     (click)="isBurgerOpen = isBurgerOpen? false:true">
     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
     </svg>
   </button>
-  <div *ngIf="isBurgerOpen" class="absolute right-0 -bottom-[5rem] h-fit bg-[#291a2c] w-48 md:hidden">
+  <div *ngIf="isBurgerOpen" class="absolute right-0 -bottom-[5rem] h-fit bg-[#2d304e] w-48 md:hidden">
     <ul class="relative m-2">
       <li *ngFor="let navItem of getNav" 
         class="">
