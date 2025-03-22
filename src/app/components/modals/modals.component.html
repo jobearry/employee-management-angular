@@ -1,0 +1,24 @@
+<!-- make div visible using 'flex' -->
+<div *ngIf="modalType === 'employeeForm' && isModalVisible()" #employeeForm
+  class="flex fixed inset-0 items-center justify-center bg-[#6161614f] z-50">
+  <div class="bg-white rounded-lg shadow-lg w-96 p-6">
+    <h2 class="text-xl font-semibold mb-4">Add Employee</h2>
+    <!-- <p class="mb-4 text-gray-600">Input employee details</p> -->
+    <div class="flex flex-col justify-end">
+      <app-form
+        [headers]="headers"
+        [fields]="fields">
+      </app-form>
+      <div class="place-self-end">
+        <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded mr-2"
+          (click)="close()">
+          Cancel
+        </button>
+        <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
+          (click)="save()">
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

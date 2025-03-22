@@ -13,7 +13,7 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'employees',
+    path: 'view/employees',
     component: EmployeesComponent
   }
 ];

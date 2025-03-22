@@ -20,10 +20,10 @@ export class NavComponent {
         return ['/home']
       }
       case "Manage":{
-        return ['/employees']
+        return ['view/employees']
       }
       default:{
-        return ['*']
+        return ['']
       }
     }
   }

@@ -1,9 +1,19 @@
 <section class="h-[calc(100vh-64px)] bg-[#252525] p-10">
-  <div>
-    <app-table
-      [data]="myEmployees"
-      [headers]="headers"
-      [fields]="fields">
-    </app-table>
+  <app-table
+    [data]="myEmployees"
+    [headers]="headers"
+    [fields]="fields">
+  </app-table>
+  <div class="my-2 flex justify-end">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      (click)="viewEmployeeForm()">
+      <i class="fa-solid fa-plus"></i>
+
+    </button>
   </div>
+  <app-modals #modal
+    [modalType]="'employeeForm'"
+    [headers]="headers"
+    [fields]="fields">
+  </app-modals>
 </section>
