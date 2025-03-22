@@ -1,6 +1,6 @@
 <section class="h-[calc(100vh-64px)] bg-[#252525] p-10">
   <app-table
-    [data]="myEmployees"
+    [data]="employeeState$ | async"
     [headers]="headers"
     [fields]="fields">
   </app-table>
@@ -13,6 +13,7 @@
   </div>
   <app-modals #modal
     [modalType]="'employeeForm'"
+    [formGroup]="employeeForm"
     [headers]="headers"
     [fields]="fields">
   </app-modals>

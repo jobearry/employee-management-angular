@@ -4,15 +4,5 @@ export interface Employee{
   fname: string,
   lname: string,
   email: string,
-  age: number
+  datehired: string
 }
-
-export const employees: Employee[] = [
-  // {
-  //   id: 1,
-  //   fname: 'Alice',
-  //   lname: 'Smith',
-  //   email: 'alice.smith@example.com',
-  //   age: 30,
-  // },
-];

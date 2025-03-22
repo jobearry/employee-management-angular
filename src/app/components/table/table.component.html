@@ -1,5 +1,5 @@
 <table class="w-full text-left table-fixed min-w-max shadow shadow-gray-400 overflow-hidden bg-[#dddddd]" >
-  <thead *ngIf="data.length">
+  <thead *ngIf="data!.length">
     <tr class="border-b border-[#8d98ad] text-[#3e415a] bg-[#b8c0cf]">
       <th *ngFor="let header of headers"
         class="p-4 text-sm font-black leading-none border border-slate-200">
@@ -7,7 +7,7 @@
       </th>
     </tr>
   </thead>
-  <tbody *ngIf="data.length; else empty">
+  <tbody *ngIf="data!.length; else empty">
     <tr *ngFor="let item of data" 
       class="hover:bg-slate-50 text-wrap border border-slate-200">
       <td *ngFor="let field of fields" 
